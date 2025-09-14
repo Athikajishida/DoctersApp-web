@@ -1,54 +1,88 @@
-# React + TypeScript + Vite
+# 🏥 MediConnect Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MediConnect is a seamless doctor–patient consultation platform.  
+This repository contains the **frontend application** built with **React + TypeScript**, following **Clean Architecture principles**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+### 👩‍⚕️ Patient Side
+- Register & book consultation slots with online payment
+- Upload medical reports (scans, lab results, prescriptions)
+- Add optional symptoms during booking
+- Receive consultation notifications via **Google Meet** & **WhatsApp**
+- Access prescriptions by email (print-ready for pharmacy use)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 👨‍⚕️ Doctor/Admin Side
+- Dashboard to view today’s, upcoming, and past appointments
+- Manage patient profiles, history, documents, and reports
+- Flexible scheduling (regular + custom schedules)
+- Start Google Meet directly from appointments
+- Prescription management with automated patient email delivery
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Frontend:** React, TypeScript  
+- **State Management:** Context API  
+- **Architecture:** Clean Architecture  
+  - Service Layer  
+  - Context Layer  
+  - Type Checkers  
+  - Custom Hooks  
+- **Styling:** (add your choice: Tailwind / CSS Modules / SCSS)  
+- **Hosting:** Amazon EC2  
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 📂 Project Structure
+
+src/
+├── components/ # Reusable UI components
+├── contexts/ # Global state management with Context API
+├── hooks/ # Custom React hooks
+├── services/ # API calls & business logic
+├── types/ # TypeScript type definitions
+├── pages/ # App pages (Patient, Doctor, etc.)
+├── utils/ # Helper functions
+└── App.tsx # Root component
+
+
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js >= 18
+- npm or yarn
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/Athikajishida/DoctersApp-web.git
+
+# Navigate into the project folder
+cd mediconnect-frontend
+
+# Install dependencies
+npm install
+# or
+yarn install
+
+### **Running Locally**
+npm run dev
+# or
+yarn dev
+
+🌐** Deployment**
+
+The app is hosted on Amazon EC2.
+👉 [Live Demo](http://register.cancerclinickerala.com)
+
+📧 **Contact
+**
+If you have any questions or suggestions:
+Athika Jishida M – Ruby on Rails & React Developer
