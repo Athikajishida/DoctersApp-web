@@ -67,9 +67,12 @@ src/
 - npm or yarn
 
 ### Installation
+
+### 1. Clone the repository
 ```bash
-# Clone the repository
 git clone https://github.com/Athikajishida/DoctersApp-web.git
+```
+
 
 # Navigate into the project folder
 cd mediconnect-frontend
