@@ -32,7 +32,7 @@ This repository contains the **frontend application** built with **React + TypeS
   - Context Layer  
   - Type Checkers  
   - Custom Hooks  
-- **Styling:** (add your choice: Tailwind / CSS Modules / SCSS)  
+- **Styling:** (add your choice: Tailwind)  
 - **Hosting:** Amazon EC2  
 
 ---
