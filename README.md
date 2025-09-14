@@ -75,24 +75,33 @@ git clone https://github.com/Athikajishida/DoctersApp-web.git
 
 
 # Navigate into the project folder
+```bash
 cd mediconnect-frontend
+```
 
 # Install dependencies
+```bash
 npm install
+```
 # or
+```bash
 yarn install
+```
 
 ### **Running Locally**
+```bash
 npm run dev
+```
 # or
+```bash
 yarn dev
+```
 
 🌐** Deployment**
 
 The app is hosted on Amazon EC2.
 👉 [Live Demo](http://register.cancerclinickerala.com)
 
-📧 **Contact
-**
+📧 **Contact**
 If you have any questions or suggestions:
 Athika Jishida M – Ruby on Rails & React Developer
