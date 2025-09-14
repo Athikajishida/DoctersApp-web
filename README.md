@@ -97,11 +97,11 @@ npm run dev
 yarn dev
 ```
 
-🌐** Deployment**
+## 🌐Deployment
 
 The app is hosted on Amazon EC2.
 👉 [Live Demo](http://register.cancerclinickerala.com)
 
-📧 **Contact**
+## 📧 Contact
 If you have any questions or suggestions:
 Athika Jishida M – Ruby on Rails & React Developer
