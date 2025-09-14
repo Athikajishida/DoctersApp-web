@@ -40,15 +40,22 @@ This repository contains the **frontend application** built with **React + TypeS
 ## 📂 Project Structure
 
 src/
-├── components/ # Reusable UI components
-├── contexts/ # Global state management with Context API
-├── hooks/ # Custom React hooks
-├── services/ # API calls & business logic
-├── types/ # TypeScript type definitions
-├── pages/ # App pages (Patient, Doctor, etc.)
-├── utils/ # Helper functions
-└── App.tsx # Root component
 
+├── components/ # Reusable UI components
+
+├── contexts/ # Global state management with Context API
+
+├── hooks/ # Custom React hooks
+
+├── services/ # API calls & business logic
+
+├── types/ # TypeScript type definitions
+
+├── pages/ # App pages (Patient, Doctor, etc.)
+
+├── utils/ # Helper functions
+
+└── App.tsx # Root component
 
 
 ---
