@@ -1,0 +1,150 @@
+/* Medical Dashboard Color Palette */
+
+:root {
+  /* Primary Colors */
+  --medical-primary: #28542F;     /* Main green header */
+  --medical-secondary: #FFFFFF;   /* White backgrounds */
+  --medical-accent: #E6F3FF;      /* Light blue for tabs */
+
+  /* Text Colors */
+  --text-primary: #1E1E1E;        /* Dark text */
+  --text-secondary: #666666;      /* Gray text */
+  --text-muted: #999999;          /* Light gray */
+
+  /* Status Colors */
+  --status-progress: #FF6B6B;     /* Red for In Progress */
+  --status-upcoming: #4A90E2;     /* Blue for Upcoming */
+  --status-completed: #28A745;    /* Green for Completed */
+
+  /* Background Colors */
+  --bg-primary: #FFFFFF;          /* White */
+  --bg-secondary: #F8F9FA;        /* Light gray */
+  --bg-table-header: #EAEFF2;     /* Table header gray */
+
+  /* Border Colors */
+  --border-light: #E0E0E0;        /* Light borders */
+  --border-medium: #CCCCCC;       /* Medium borders */
+  
+  /* Hover States */
+  --hover-light: #F8F9FA;         /* Light hover */
+  --hover-primary: #1E4A23;       /* Dark green hover */
+  
+  /* Focus States */
+  --focus-ring: #28542F;          /* Focus ring color */
+  --focus-ring-opacity: 0.2;      /* Focus ring opacity */
+}
+
+/* Utility Classes */
+.text-medical-primary { color: var(--medical-primary); }
+.text-medical-secondary { color: var(--medical-secondary); }
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted { color: var(--text-muted); }
+
+.text-status-progress { color: var(--status-progress); }
+.text-status-upcoming { color: var(--status-upcoming); }
+.text-status-completed { color: var(--status-completed); }
+
+.bg-medical-primary { background-color: var(--medical-primary); }
+.bg-medical-secondary { background-color: var(--medical-secondary); }
+.bg-medical-accent { background-color: var(--medical-accent); }
+.bg-primary { background-color: var(--bg-primary); }
+.bg-secondary { background-color: var(--bg-secondary); }
+.bg-table-header { background-color: var(--bg-table-header); }
+
+.border-light { border-color: var(--border-light); }
+.border-medium { border-color: var(--border-medium); }
+
+/* Component Specific Styles */
+.medical-card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.medical-button {
+  background-color: var(--medical-primary);
+  color: var(--medical-secondary);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.medical-button:hover {
+  background-color: var(--hover-primary);
+}
+
+.medical-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 84, 47, var(--focus-ring-opacity));
+}
+
+.medical-input {
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.medical-input:focus {
+  outline: none;
+  border-color: var(--medical-primary);
+  box-shadow: 0 0 0 3px rgba(40, 84, 47, var(--focus-ring-opacity));
+}
+
+.medical-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-primary);
+}
+
+.medical-table th {
+  background-color: var(--bg-table-header);
+  color: var(--text-secondary);
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.medical-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-primary);
+}
+
+.medical-table tr:hover {
+  background-color: var(--hover-light);
+}
+
+/* Status Badge Styles */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.status-badge.in-progress {
+  color: var(--status-progress);
+  background-color: rgba(255, 107, 107, 0.1);
+}
+
+.status-badge.upcoming {
+  color: var(--status-upcoming);
+  background-color: rgba(74, 144, 226, 0.1);
+}
+
+.status-badge.completed {
+  color: var(--status-completed);
+  background-color: rgba(40, 167, 69, 0.1);
+}

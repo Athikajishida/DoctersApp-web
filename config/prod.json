@@ -1,0 +1,5 @@
+{
+    "apiBaseUrl": "https://dev.api.example.com",
+    "apiKey": "dev-secret-key",
+    "mode": "development"
+}
